@@ -42,6 +42,9 @@ public class MyReceiver {
 
 			System.out.println("\n\n\n\nRECEIVER MESSAGE : " + message.toString() + "\n\n\n");
 
+			queueReceiver.close();
+			queueConnection.close();
+
 		}catch(Exception e){
 			e.printStackTrace();
 		}
