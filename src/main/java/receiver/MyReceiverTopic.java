@@ -25,15 +25,12 @@ public class MyReceiverTopic {
 			topicConnection.start();
 
 			// Create a receiver
-			TopicReceiver topicReceiver = topicSession.createReceiver(topic);
+			MessageConsumer messageConsumer = topicSession.createConsumer(topic);
+			messageConsumer.setMessageListener(new Listener());
+			Thread.sleep(3000);
 
-			// Receive the message
-			// Works with two receiving processes
-			Message message = topicReceiver.receive();
-
-			System.out.println("\n\n\n\nRECEIVER MESSAGE : " + message.toString() + "\n\n\n");
-
-			topicReceiver.close();
+			// Close connections
+			messageConsumer.close();
 			topicConnection.close();
 
 		}catch(Exception e){
