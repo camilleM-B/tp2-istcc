@@ -40,7 +40,7 @@ public class MyReceiver {
 			// Receive the message
 			Message message = queueReceiver.receive();
 
-			System.out.println("RECEIVER MESSAGE : " + message.toString());
+			System.out.println("\n\n\n\nRECEIVER MESSAGE : " + message.toString() + "\n\n\n");
 
 		}catch(Exception e){
 			e.printStackTrace();
