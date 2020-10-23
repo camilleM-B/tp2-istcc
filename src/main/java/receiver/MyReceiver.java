@@ -38,6 +38,7 @@ public class MyReceiver {
 			QueueReceiver queueReceiver = queueSession.createReceiver(queue);
 
 			// Receive the message
+			// Works with two receiving processes
 			Message message = queueReceiver.receive();
 
 			System.out.println("\n\n\n\nRECEIVER MESSAGE : " + message.toString() + "\n\n\n");

@@ -1,6 +1,8 @@
-receiver/MyReceiver.java
- receiver.MyReceiver
-com/example/demo/DemoApplication.java
- com.example.demo.DemoApplication
 sender/MySender.java
  sender.MySender
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+sender/MySenderTopic.java
+ sender.MySenderTopic
+receiver/MyReceiver.java
+ receiver.MyReceiver
