@@ -29,7 +29,7 @@ public class MySenderTopic {
 			MessageProducer messageProducer = topicSession.createProducer(topic);
 
 			// Create a message
-			TextMessage textMessage = topicSession.createTextMessage("Hello worlddd");
+			TextMessage textMessage = topicSession.createTextMessage("Hello worlddd du topiquent");
 			System.out.println("SENDER MESSAGE : " + textMessage.toString());
 
 			// Send the message

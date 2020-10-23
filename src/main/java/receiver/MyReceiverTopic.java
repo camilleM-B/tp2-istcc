@@ -27,7 +27,6 @@ public class MyReceiverTopic {
 			// Create a receiver
 			MessageConsumer messageConsumer = topicSession.createConsumer(topic);
 			messageConsumer.setMessageListener(new Listener());
-			Thread.sleep(3000);
 
 			// Close connections
 			messageConsumer.close();
